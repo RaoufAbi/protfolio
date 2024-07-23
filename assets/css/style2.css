@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lobster&family=Maname&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.425;
+    cursor: none;
+}
+.special-tag{
+ cursor: pointer; 
+}
+.cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+}
+.cursor-outline{
+    border: 2px solid hsla(0, 0%, 0%, 0.8);
+}
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    transition: width 0.1s linear, height 0.1s linear; 
+}
+
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    color: #000000;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: "Edu AU VIC WA NT Hand";
+    cursor: pointer;
+}
+h1{
+font-family: "Akshar", sans-serif;
+}
+
+p{
+    font-family: "Mukta", sans-serif;
+}
+h5 {
+    font-size: 1.4rem;
+}
+
+
+
+
+
+  /* home eaf1f8be */
+
+.home {
+    background: #d9ebf863;  /* fallback for old browsers */
+    position: relative;
+    
+    padding-bottom: 0; /* Added some padding at the bottom */
+    margin: 20px 50px;
+    border-radius: 40px;
+}
+
+.titleHomeLeft{
+    position: absolute;
+    margin-top: 15px;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+}
+
+.titleHomeLeft h1,
+.titleHomeRight h1{
+ font-family: "Maname";
+ letter-spacing: 3px;
+ color: rgb(0, 0, 0);
+ white-space: 5px;
+ margin: 2rem;
+}
+
+.titleHomeLeft p,
+.titleHomeRight p{
+margin-top: 20px;
+ font-family: "Edu AU VIC WA NT Hand";
+ letter-spacing: 2px;
+ color: rgb(0, 0, 0);
+ font-size: 22px;
+}
+
+.titleHomeRight{
+    position: absolute;
+    top: 48%;
+    right: 3%;
+    transform: translate(-15%, -52%);
+    text-align: center;
+}
+
+
+
+
+
+spline-viewer{
+   width: 100%;
+   
+}
+
+.social-links{
+    position: absolute;
+    bottom: 1%;
+    left: 30px;
+    transform: translate(-0px, -50%);
+}
+.social-links,.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+    justify-content: center;
+  }
+  
+  .social-btn img {
+    height: 24px;
+    width: 24px;
+    margin-left: 4px;
+  }
+  
+  .social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+    margin-left: 5px;
+  }
+  
+  .social-btn:hover {
+    width: 160px;
+    border-radius: 5px;
+  }
+  
+  .social-btn:hover span {
+    padding: 2px;
+    width: 100px;
+    font-size: 16px;
+  }
+  
+  
+.grid_partie{
+    position: relative;
+
+}
+
+.divider {
+    width: 84%;
+    height: 2px; /* Width of the divider line */
+    background-color: #00000047; /* Black color for the line */
+    margin: 60px; /* Adjust margin as needed */
+    top: 0%;
+    left: 0%;
+    transform: translate(6%, -0%);
+}
+
+/* loading */

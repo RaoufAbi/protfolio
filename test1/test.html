@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <title>UpGax · Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="home">
+        <div class="navbar">
+            <div class="navbar_left">
+                <div class="logo">
+                    <a href="#"><img src="assets/img/logo.png" class="logo_img" alt="UpGax Logo"></a>
+                </div>
+                <div class="sitemap">
+                    <h5>Sitemap:</h5>
+                    <div class="sitemap_line">
+                        <a href="#">About me,</a>
+                        <a href="#"> Projects</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar_right">
+                <div class="status">
+                    <h5>Status</h5>
+                    <p>Available for freelance projects from 18th July</p>
+                </div>
+                <div class="location">
+                    <h5>Location:</h5>
+                    <p>Local time 11:43, GMT (+7:00)</p>
+                </div>
+            </div>
+        </div>
+        <main class="center_home">
+            <div class="home_title">
+                <h1>We build dreams</h1>
+                <p id="home_subtitle">The work team consists of highly qualified specialists in the field of information technology and design. The company offers a wide range of services, including the development of mobile applications, websites and content management systems, in addition to solutions in the field of artificial intelligence and machine learning.<p>
+            </div>
+            
+            <div class="three_d_logo">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/GCV3bR7HHj3jix9Z/scene.splinecode"></spline-viewer>
+            </div>
+            
+        </main>
+        <div class="bottom_bar logos">
+            <div class="logos-slide">
+                <span>Company profile</span>
+                <span>Social media</span>
+                <span>Business website</span>
+                <span>Ecommerce website</span>
+                <span>Desktop app</span>
+                <span>Backend app</span>
+                <span>Frontend app</span>
+                <span>Full stack app</span>
+                <span>Artificial intelligence</span>
+                <span>Machine learning</span> 
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="services_title">
+            <h1>services</h1>
+            <p>Artificial intelligence</p>
+        </div>
+
+        <div class="services_card">
+            <div class="card card1">HOVER</div>
+            <div class="card card2">HOVER</div>
+            <div class="card card3">HOVER</div>
+            <div class="card card4">HOVER</div>
+        </div>
+        
+    </div>
+
+    <script src="assets/js/text.js"></script>
+    <script>
+        var logosSlide = document.querySelector(".logos-slide");
+        var clone = logosSlide.cloneNode(true);
+        logosSlide.parentNode.appendChild(clone);
+
+        //  animate card
+    document.addEventListener('scroll', function() {
+    var cards = document.querySelectorAll('.card');
+    var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollPosition >= 220) {
+        cards.forEach(function(card) {
+            card.classList.add('animate');
+        });
+    }
+});
+    </script>
+</body>
+</html>

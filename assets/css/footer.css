@@ -1,0 +1,149 @@
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:  4rem;
+    
+}
+
+.footer ul li{
+    list-style-type: none;
+    padding-top:10px ;
+}
+
+.footer h3{
+  font-family: "Akshar",sans-serif;    font-size: 30px;
+    color: #083577;
+    font-size: 2rem;
+}
+
+
+.footer ul li{
+    
+    letter-spacing: 1px;
+    
+}
+
+
+.footer .footer-contact ul li img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+.footer .footer-contact ul li p{
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Maname";
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    padding:0 0px 20px 20px;
+    align-items: center;
+    margin-left: 25px;
+}
+.footer .contact_form{
+    width: 400px;
+    margin-top: -15px;
+    
+}
+.footer .contact_form .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 450px;
+    background-color: #fff;
+    
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .footer .contact_form .title {
+    color: #083577;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    
+    font-weight: 900;
+    color: #083577;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .contact_form .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .footer .contact_form .form label {
+    position: relative;
+  }
+  
+  .footer .contact_form .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .footer .contact_form .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.4rem;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .footer .contact_form .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.6em;
+  }
+  
+  .footer .contact_form .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.4em;
+    font-weight: 600;
+  }
+  
+  .footer .contact_form .form label .input:valid + span {
+    color: green;
+  }
+  
+  .footer .contact_form .msj input{
+  height: 100px;
+  }
+  
+  .footer .contact_form .submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .footer .contact_form .submit:hover {
+    background-color: rgb(56, 90, 194);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }

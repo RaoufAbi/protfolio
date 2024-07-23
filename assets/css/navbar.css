@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border-radius: 34px;
+    z-index: 99;
+    text-align: center;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    transform: translate(-03%,0%);
+    margin-top:20px ;
+    z-index: 10;
+    padding: 1px 0px 1px 60px;
+    width: 94%;
+    transition: 0.3s;
+}
+
+.logo_img {
+    width: 15rem;
+    padding-top: 30px;
+    margin-left: -5rem;
+}
+
+
+.navbar a{
+    font-size: 22px;
+    font-weight: 450;
+}
+
+.navbar .center.ligne{
+    
+    display: flex;
+    width: 30rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar .left{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .contact{
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    background-color:#0d5ed8 ;
+    color: #fff;
+    border-radius: 10rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: .4rem .5rem;
+    padding-right: 10px;
+    margin-left: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color .3s;
+}
+
+.navbar .contact .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    color: rgb(64, 39, 115);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.navbar .contact:hover{
+    background-color: #2597e9d4;
+    
+    color: #000000;
+}
+
+.navbar .contact:hover .button__icon-wrapper {
+    color: #000000;
+  }
+  
+.navbar .contact .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .navbar .contact:hover .button__icon-svg:first-child {
+    transition: transform .3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+.navbar .contact:hover .button__icon-svg--copy {
+    transition: transform .3s ease-in-out .1s;
+    transform: translate(0);
+  }
+.navbar h3{
+    font-family: "Rubik",sans-serif;
+    font-weight:400 ;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+
+.navbar .left img{
+    width: 50px;
+    margin-left: 0px;
+    margin-top: -25px;
+}
+
+.navbar .right{
+    display: flex;
+    width: 18rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.navbar .right img{
+    width: 30px;
+}
+
+a{
+    
+    text-decoration:none;
+    color: black;
+    transition: transform 0.3s ease;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.navbar .right a:hover{
+    color: rgb(0, 0, 0);
+}
