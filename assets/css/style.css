@@ -1,0 +1,861 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lobster&family=Maname&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.425;
+    cursor: none;
+}
+.special-tag{
+ cursor: pointer; 
+}
+.cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+}
+.cursor-outline{
+    border: 2px solid hsla(0, 0%, 0%, 0.8);
+}
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    transition: width 0.1s linear, height 0.1s linear; 
+}
+
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    color: #000000;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: "Edu AU VIC WA NT Hand";
+    cursor: pointer;
+}
+h1{
+font-family: "Akshar", sans-serif;
+}
+
+p{
+    font-family: "Mukta", sans-serif;
+}
+h5 {
+    font-size: 1.4rem;
+}
+
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border-radius: 34px;
+    z-index: 99;
+    text-align: center;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    transform: translate(-03%,0%);
+    margin-top:20px ;
+    z-index: 999;
+    padding: 1px 0px 1px 20px;
+    width: 94%;
+    transition: 0.3s;
+}
+
+.logo_img {
+    padding-top: 30px;
+    margin-left: -5rem;
+}
+
+
+.navbar a{
+    font-size: 22px;
+    font-weight: 450;
+}
+
+.navbar .center.ligne{
+    
+    display: flex;
+    width: 30rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar .left{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar h3{
+    font-family: "Rubik",sans-serif;
+    font-weight:400 ;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    color: #000000;
+    width: 10rem;
+}
+
+.navbar .left img{
+    width: 50px;
+    margin-left: 0px;
+    margin-top: -25px;
+}
+
+.navbar .right{
+    display: flex;
+    width: 18rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.navbar .right img{
+    width: 30px;
+}
+
+a{
+    
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.navbar .right a:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+.navbar .contact{
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    background-color:#0d5ed8 ;
+    color: #fff;
+    border-radius: 10rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: .4rem .5rem;
+    padding-right: 10px;
+    margin-left: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color .3s;
+}
+
+.navbar .contact .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    color: rgb(64, 39, 115);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.navbar .contact:hover{
+    background-color: #2597e9d4;
+    
+    color: #000000;
+}
+
+.navbar .contact:hover .button__icon-wrapper {
+    color: #000000;
+  }
+  
+.navbar .contact .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .navbar .contact:hover .button__icon-svg:first-child {
+    transition: transform .3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+.navbar .contact:hover .button__icon-svg--copy {
+    transition: transform .3s ease-in-out .1s;
+    transform: translate(0);
+  }
+
+.menu-btn{display: none;
+  margin-left: 150px;
+}
+
+
+.home {
+
+    background: none;  /* fallback for old browsers */
+    position: relative;
+    
+    padding-bottom: 0; /* Added some padding at the bottom */
+    margin: 20px 30px;
+    border-radius: 40px;
+}
+
+
+
+  
+  
+.grid_partie{
+    position: relative;
+
+}
+
+.divider {
+    width: 84%;
+    height: 2px; /* Width of the divider line */
+    background-color: #00000047; /* Black color for the line */
+    margin: 60px; /* Adjust margin as needed */
+    top: 0%;
+    left: 0%;
+    transform: translate(6%, -0%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+/* home */
+header{
+  height: 100vh;
+  width: 100%;
+  background: url("../img/home/pexels-gdtography-277628-911738.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+}
+::selection{
+  background: #a3f5ec;
+}
+
+.text-content{
+  position: absolute;
+  top: 33%;
+  left: 10%;
+  z-index: 12;
+}
+header .text-content .text{
+  font-size: 27px;
+  margin-left: 0;
+  color: #7a56b0;
+
+}
+header .text-content .name{
+  color: #0d5ed8;
+ font-size: 75px;
+ font-weight: 600;
+ margin: 0px 0 0 -3px;
+ text-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+header .text-content .job{
+ color: #7a56b0;
+ font-size: 40px;
+ margin: 5px 0;
+ margin-top: -4px;
+ display: flex;
+}
+.text-content .typing-text{
+  margin-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #1de2d1;
+  animation: typing 3s steps(9) infinite;
+}
+@keyframes typing{
+  0%{
+    width: 0ch;
+  }
+  50%{
+    width: 9ch;
+  }
+  100%{
+    width: 0ch;
+  }
+}
+.text-content .job .one{
+  color: #0d5ed8;
+}
+
+.buttons{
+  margin: 20px 0 0 50px;
+}
+
+.content .girl img{
+  position: absolute;
+  height: 95%;
+  bottom: 0;
+  right: 5%;
+  position: absolute;
+}
+header .media-icons{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 11%;
+  bottom: 10%;
+}
+.media-icons a{
+ margin-right: 50px;
+ font-size: 40px;
+ font-weight: 500;
+ text-decoration: none;
+ opacity: 0.7;
+ color: #2e2e96;
+ transition: all 0.3s ease;
+}
+.media-icons a:hover{
+ opacity: 1;
+}
+
+/* why as*/
+
+.about {
+  display: flex; /* Or grid, depending on your layout */
+  flex-direction: column; /* Or row, based on your layout */
+  /* Add space between elements */
+  padding: 0 5%;
+  margin: 0 40px;
+}
+
+/* Adjust parent container if necessary */
+.about .container {
+  display: flex; /* Or grid */
+  flex-direction: column; /* Or row */
+
+}
+
+.about h1 {
+  font-family: "Akshar", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  margin: 5rem 0 2rem; /* Adjusted margin for better spacing */
+  text-decoration: underline;
+  color: #000;
+
+}
+.updiv{
+  position: relative;
+}
+
+
+.about .reveal-text {
+  font-family: "Mukta", sans-serif;
+  margin-bottom: 2rem; /* Adjusted margin */
+  color: #000;
+  font-size: 3.5rem; /* Adjusted font size */
+  line-height: 1.3; /* Improved line height for readability */
+}
+
+.about .about_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  justify-content: space-around;
+  margin-top: 3rem;
+  align-items: center;
+
+}
+
+
+.about .about_grid h2 {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Akshar", sans-serif;
+  margin-left: 20px; /* Adjusted margin */
+  color: #083577;
+}
+
+.about .about_grid ol {
+  
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Mukta", sans-serif;
+  margin-left: 20px; /* Adjusted margin */
+}
+
+.about .about_right p {
+  font-family: "Mukta", sans-serif;
+  font-size: 20px; /* Adjusted font size */
+  line-height: 1.6;
+  font-weight: 300;
+  margin-left: 20px; /* Improved line height */
+}
+
+
+
+.aboutUs .left{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Akshar", sans-serif;
+  color: #083577;;
+}
+.aboutUs .left p{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Mukta", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: hsla(222, 91%, 4%, 0.863);
+}
+
+.aboutUs .right .whyus{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin:  5rem;
+  
+}
+
+.aboutUs .card {
+  flex: 0 0 calc(50% - 120px);
+  max-width: 400px;
+  max-height: 400px;
+  min-height: 400px;
+  text-align: center;
+  border-radius: 20px;
+  background: #ffffff;
+  position: relative;
+  
+  border: 2px solid #ffffff;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin-bottom: 20px;
+
+  
+ }
+ .aboutUs .card.up{
+  animation: appear linear;
+  animation-timeline: view() ;
+  animation-range: entry 0 cover 40%;
+ }
+ @keyframes appear {
+from{
+  transform:translateX(80px);
+opacity:0;
+}to{
+    transform:translateX(0);
+    opacity: 1;
+  }
+ }
+
+ .aboutUs .card.down{
+  animation: appear2 linear;
+  animation-timeline: view() ;
+  animation-range: entry 0 cover 40%;
+ }
+ @keyframes appear2 {
+from{
+  transform:translateX(-80px);
+opacity:0;
+}to{
+    transform:translateX(0);
+    opacity: 1;
+  }
+ }
+ .aboutUs .card .card-title{
+  font-family: "Akshar";
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 40px;
+  color: #011128;
+ }
+
+ .aboutUs .card .small-desc{
+  font-family:"Mukta" ;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 10px;
+ }
+ .aboutUs .card .logo_card{
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  background: #ffffff;
+  position: relative;
+  top: 0%;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;  left: 50%;
+  transform: translate(-50%, -0%);
+  
+ }
+
+ .aboutUs .card img{
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 50%;
+  left: 40%;
+  transform: translate(-60%, -50%);
+ }
+ 
+ .aboutUs .card-details {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+ }
+ 
+ 
+ .aboutUs .text-body {
+  color: rgb(134, 134, 134);
+ }
+ 
+ 
+ /*Hover*/
+ .aboutUs .card:hover {
+  border-color: #008bf8;
+ 
+ }
+ 
+
+/* project and serviece */
+
+p{
+  font-family: "Mukta",sans-serif;
+}
+.service,
+.project{
+  margin: 0px 60px;
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: 30% 68% ;
+}
+.service .left,
+.project .left{
+  padding: 40px;
+  position: sticky;
+  top: 0px; /* Adjust as needed */
+  height: fit-content; /* Ensures height adapts to content */
+  align-self: self-start;
+
+}
+
+.service .left h3,
+.project .left h3 {
+  font-family: "Akshar",sans-serif;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #083577;
+}
+.service .left p,
+.project .left p {
+  font-family: "Mukta",sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #082052;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.service .right,
+.project .right{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* card */
+
+.project .card {
+  flex: 0 0 calc(60% - 120px); /* Adjust the width of each card; 20px is for padding or margin */
+  /* Adjust margin between cards */
+  margin-top: 40px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border: 1px solid transparent;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  animation: appearProject linear;
+  animation-timeline: view() ;
+  animation-range: entry 0 cover 40%;
+}
+
+
+
+ @keyframes appearProject {
+from{
+  scale:0.8;
+ 
+opacity:0;
+}to{
+  scale:1;
+
+    opacity: 1;
+  }
+ }
+
+.project .right .card:nth-child(1),
+.project .right .card:nth-child(3) {
+  margin-right:20px ;
+}
+
+.project .right .card:nth-child(2),
+.project .right .card:nth-child(4) {
+  margin-left:20px ;
+}
+
+.project .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    transform: scale(1.05, 1.05);
+
+}
+
+.project .card a {
+  text-decoration: none
+}
+
+.project .card .content {
+  padding: 1.1rem;
+}
+
+.project .card .image {
+  object-fit: cover;
+  width: 100%;
+  height: 240px;
+  background-color: rgb(239, 205, 255);
+  border-radius: 16px 16px 10px 10px;
+}
+.project .card .image img{
+  border-radius: 16px 16px 10px 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.project .card .title {
+  color: #000000;
+  font-size: 1.15rem;
+  font-weight: 600;
+  font-family: "Akshar",sans-serif;
+}
+
+.project .card .desc {
+  font-family: "Mukta",sans-serif;
+  font-size: 18px;
+  word-spacing: 1px;
+  margin-top: 10px;
+  color: rgb(0, 0, 0)
+}
+th{
+  color: #134973;
+  font-size: 1rem;
+  
+  font-weight: 600;
+  font-family: "Akshar",sans-serif;
+}
+td{
+  font-family: "Mukta",sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  color: #000000;
+}
+
+table {
+  margin-top: 10px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+
+.service .right{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.service .card {
+  width: 350px;
+  height: 500px;
+  transition: all 0.2s;
+  position: relative;
+
+  background-color: #ecebf1;
+  border-radius: 40px;
+  text-align: center;
+
+
+animation: appearService linear;
+animation-timeline: view() ;
+animation-range: entry 0 cover 40%;
+}
+
+
+
+@keyframes appearService {
+from{
+  transform:translateY(100px) translateX(-100px);
+  opacity:0;
+}to{
+  transform:translateY(0) translateX(0);
+  opacity:1;
+}
+}
+
+.service .card .card_image{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+.service .card .descripation{
+  top: 0%;
+  transform: translate(-0%,50%);
+}
+.service .card h3{
+  font-family: "Akshar", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  padding-top:2rem ; 
+  color: #041e45;
+}
+
+.service .card p{
+  font-family: "Mukta", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  margin: 1rem 2rem; /* Adjusted margin for better spacing */
+  color: #040600;
+}
+
+.service .card .card_image img{
+  width: 100px;
+  height: 100px;
+}
+.service .card-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(255,255,255,.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+}
+
+.service .card:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+
+.service .circle {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#0e17b7, #53b3ef);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+
+.circle:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+
+.service .circle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
+}
+
+
+
+
+
+
+/* footer */
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:  4rem;
+    
+}
+
+.footer ul li{
+    list-style-type: none;
+    padding-top:10px ;
+}
+
+.footer h3{
+  font-family: "Akshar",sans-serif;    font-size: 30px;
+    color: #083577;
+    font-size: 2rem;
+}
+
+
+.footer ul li{
+    
+    letter-spacing: 1px;
+    
+}
+
+
+.footer .footer-contact ul li img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+.footer .footer-contact ul li p{
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Maname";
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    padding:0 0px 20px 20px;
+    align-items: center;
+    margin-left: 25px;
+}
