@@ -498,7 +498,7 @@ display: none;
     }
     
     .navbar{
-      padding: 1px 0px 1px 0px;
+      padding: 1px 0px 1px 30px;
       width: 94%; 
       margin-top:10px ;
   }
@@ -746,12 +746,15 @@ display: none;
   body{
     margin: 0;
     padding: 0;
+    
   }
   .navbar{
+    margin: 0;
     padding: 1px 0px 1px 10px;
-    width: 92%; 
+    width: 97%; 
     margin:10px  0;
     justify-content: space-between;
+    border-radius: 40px;
 }
 .navbar h3{
   display: none;
@@ -763,7 +766,7 @@ display: none;
 }
 .menu-btn{
     display: flex;
-    margin-left: -40px;
+    margin-left: 140px;
 }
 .home {
   width: 100%;

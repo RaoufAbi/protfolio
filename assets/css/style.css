@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
     color: #000000;
     font-family: "Inter", sans-serif;
@@ -71,8 +75,8 @@ h5 {
     text-align: center;
     position: fixed;
     top: 0%;
-    right: 0%;
-    transform: translate(-03%,0%);
+    right: 50%;
+    transform: translateX(50%);
     margin-top:20px ;
     z-index: 999;
     padding: 1px 0px 1px 20px;
