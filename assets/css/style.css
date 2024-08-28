@@ -236,10 +236,11 @@ a{
     width: 84%;
     height: 2px; /* Width of the divider line */
     background-color: #00000047; /* Black color for the line */
-    margin: 60px; /* Adjust margin as needed */
+    margin: 60px; 
+    position: relative;/* Adjust margin as needed */
     top: 0%;
-    left: 0%;
-    transform: translate(6%, -0%);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 *{
@@ -458,35 +459,7 @@ header .media-icons{
 
   
  }
- .aboutUs .card.up{
-  animation: appear linear;
-  animation-timeline: view() ;
-  animation-range: entry 0 cover 40%;
- }
- @keyframes appear {
-from{
-  transform:translateX(80px);
-opacity:0;
-}to{
-    transform:translateX(0);
-    opacity: 1;
-  }
- }
 
- .aboutUs .card.down{
-  animation: appear2 linear;
-  animation-timeline: view() ;
-  animation-range: entry 0 cover 40%;
- }
- @keyframes appear2 {
-from{
-  transform:translateX(-80px);
-opacity:0;
-}to{
-    transform:translateX(0);
-    opacity: 1;
-  }
- }
  .aboutUs .card .card-title{
   font-family: "Akshar";
   font-size: 30px;
@@ -601,24 +574,12 @@ p{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   border: 1px solid transparent;
   transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-  animation: appearProject linear;
-  animation-timeline: view() ;
-  animation-range: entry 0 cover 40%;
+
 }
 
 
 
- @keyframes appearProject {
-from{
-  scale:0.8;
- 
-opacity:0;
-}to{
-  scale:1;
 
-    opacity: 1;
-  }
- }
 
 .project .right .card:nth-child(1),
 .project .right .card:nth-child(3) {
@@ -714,23 +675,6 @@ td, th {
   background-color: #ecebf1;
   border-radius: 40px;
   text-align: center;
-
-
-animation: appearService linear;
-animation-timeline: view() ;
-animation-range: entry 0 cover 40%;
-}
-
-
-
-@keyframes appearService {
-from{
-  transform:translateY(100px) translateX(-100px);
-  opacity:0;
-}to{
-  transform:translateY(0) translateX(0);
-  opacity:1;
-}
 }
 
 .service .card .card_image{

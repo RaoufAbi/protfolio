@@ -35,6 +35,23 @@
   /* Tablets and small desktops */
   @media (min-width: 769px) and (max-width: 1024px) {
 
+    .special-tag{
+      cursor: none; 
+     }
+     .cursor-dot{
+         width: 0;
+         height: 0;
+     }
+     .cursor-outline{
+         display: none;
+     }
+     .cursor-dot,
+     .cursor-outline{
+      cursor: none;
+      display: none;
+     }
+
+     
 .navbar .contact,
 .navbar .ligne a{
     display: none;
@@ -44,8 +61,16 @@
 }
 
 /* home */
-.content .girl img{
-    right: 5%;
+.girl{
+  display: none;
+}
+.text-content{
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Position from the top */
+  left: 50%; /* Position from the left */
+  transform: translate(-50%, -50%); /* Offset the element by 50% of its own width and height */
+  /* Optional styling */
+  text-align: center;
 }
 /* about */
 .about .reveal-text {
@@ -67,7 +92,7 @@
     margin-left: 50px; /* Improved line height */
   }
 
-
+ 
   /* why us */
 
   .aboutUs .card .card-title{ 
@@ -236,17 +261,23 @@
 
     }
   
-  .cursor-dot{
-    cursor: none;
-    display: none;
-    width: 0px;
-    height: 0px;
-    background-color: rgb(0, 0, 0)
+    .special-tag{
+      cursor: none; 
+     }
+     .cursor-dot{
+         width: 0;
+         height: 0;
+     }
+     .cursor-outline{
+         display: none;
+     }
+     .cursor-dot,
+     .cursor-outline{
+      cursor: none;
+      display: none;
+     }
 
-  }
-  .cursor-outline{ 
-    display: none;
-  }
+     
 .navbar{
     padding: 1px 0px 1px 20px;
     width: 94%; 
@@ -276,10 +307,23 @@ header{
   background-size:auto;
   border-radius: 0 0 40px 40px;
 }
+.girl{
+  display: none;
+}
+.text-content{
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Position from the top */
+  left: 50%; /* Position from the left */
+  transform: translate(-50%, -50%); /* Offset the element by 50% of its own width and height */
+  /* Optional styling */
+  text-align: center;
+}
   
 header .media-icons{
-  left: 5%;
-  bottom: 5%;
+  position: absolute; /* Absolute positioning */
+ /* Position from the top */
+  left: 50%; /* Position from the left */
+  transform: translateX(-50%);
 }
 .media-icons a{
   margin-right: 40px;
@@ -527,10 +571,23 @@ display: none;
     background-size:auto;
     border-radius: 0 0 40px 40px;
   }
+  .girl{
+    display: none;
+  }
+  .text-content{
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Position from the top */
+    left: 50%; /* Position from the left */
+    transform: translate(-50%, -50%); /* Offset the element by 50% of its own width and height */
+    /* Optional styling */
+    text-align: center;
+  }
     
   header .media-icons{
-    left: 5%;
-    bottom: 5%;
+    position: absolute; /* Absolute positioning */
+   /* Position from the top */
+    left: 50%; /* Position from the left */
+    transform: translateX(-50%);
   }
   .media-icons a{
     margin-right: 40px;
@@ -604,10 +661,8 @@ display: none;
     width: 84%;
     height: 2px; /* Width of the divider line */
     background-color: #00000047; /* Black color for the line */
-    margin: 0 60px; /* Adjust margin as needed */
-    top: 0%;
-    left: 0%;
-    transform: translate(6%, -0%);
+    margin: 0 ; /* Adjust margin as needed */
+
 }
   .service .left ,
   .project .left {
@@ -748,6 +803,24 @@ display: none;
     padding: 0;
     
   }
+
+  .special-tag{
+    cursor: none; 
+   }
+   .cursor-dot{
+       width: 0;
+       height: 0;
+   }
+   .cursor-outline{
+       display: none;
+   }
+   .cursor-dot,
+   .cursor-outline{
+    cursor: none;
+    display: none;
+   }
+
+   
   .navbar{
     margin: 0;
     padding: 1px 0px 1px 10px;
@@ -784,13 +857,27 @@ header{
   background-size:auto;
   border-radius: 0 0 40px 40px;
 }
-
-.text-content{
-  position: absolute;
-  top: 23%;
-  left: 10%;
-  z-index: 12;
+.girl{
+  display: none;
 }
+.text-content{
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Position from the top */
+  left: 50%; /* Position from the left */
+  transform: translate(-50%, -50%); /* Offset the element by 50% of its own width and height */
+  /* Optional styling */
+  text-align: center;
+}
+  
+header .media-icons{
+  position: absolute; /* Absolute positioning */
+ /* Position from the top */
+  left: 50%; /* Position from the left */
+  transform: translateX(-45%);
+  margin: 0;
+  padding: 0;
+}
+
 header .text-content .text{
   font-size: 22px;
 }
@@ -803,15 +890,12 @@ header .text-content .name{
 }
 header .text-content .job{
   color: #7a56b0;
-  font-size: 30px;
+  font-size: 26px;
   margin: 5px 0;
   margin-top: -4px;
   display: flex;
  }
-header .media-icons{
-  left: 5%;
-  bottom: 5%;
-}
+
 .media-icons a{
   margin-right: 40px;
   font-size: 35px;
@@ -914,10 +998,7 @@ flex-direction: column;
   width: 84%;
   height: 2px; /* Width of the divider line */
   background-color: #00000047; /* Black color for the line */
-  margin: 0 60px; /* Adjust margin as needed */
-  top: 0%;
-  left: 0%;
-  transform: translate(6%, -0%);
+  margin: 0 ; /* Adjust margin as needed */
 }
 .service .left ,
 .project .left {
