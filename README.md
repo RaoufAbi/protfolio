@@ -14,5 +14,4 @@ Check out my live portfolio here: [My Portfolio](https://raoufabi.github.io/prot
 
 This repository contains the code for my portfolio website. Feel free to explore and check out the projects I have worked on!
 
-- Built using modern web technologies.
 - Responsive design for all devices.
